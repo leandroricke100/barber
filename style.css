@@ -185,6 +185,8 @@ i {
 }
 
 .about-description h2 {
+  display: flex;
+  justify-content: center;
   font-size: 38px;
   margin-bottom: 24px;
 }
