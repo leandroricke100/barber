@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,38 +19,53 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Dev Barbearia</title>
   </head>
   <body>
     <div class="bg-home">
       <header>
         <nav class="header-content container">
-          <div class="header-icons">
-            <a href="#">
+          <div class="header-icons" data-aos="fade-down">
+            <a href="https://www.instagram.com/leandro_ricke/" target="_blank">
               <i class="fa-brands fa-instagram fa-2x"></i>
             </a>
 
-            <a href="#">
+            <a href="https://www.facebook.com/profile.php?id=100014023626215" target="_blank">
               <i class="fa-brands fa-facebook fa-2x"></i>
             </a>
 
-            <a href="#">
+            <a href="https://www.instagram.com/leandro_ricke/" target="_blank">
               <i class="fa-brands fa-tiktok fa-2x"></i>
             </a>
           </div>
 
-          <div class="header-logo">
-            <img src="assets/logo.svg" alt="Logo da barbearia" />
+          <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+            <img
+            data-aos="flip-up"
+            data-aos-delay="300"
+            data-aos-duration="1500" 
+            src="assets/logo.svg" alt="Logo da barbearia" />
           </div>
 
-          <div>
-            <a class="header-button" href="#">Agendar horário</a>
+          <div data-aos="fade-down">
+            <a
+              class="header-button"
+              href="https://api.whatsapp.com/send?phone=5531984655356&text=Ol%C3%A1,%20Gostaria%20de%20fazer%20um%20agendamento!"
+              target="_blank"
+              >Agendar horário</a
+            >
           </div>
         </nav>
 
-        <main class="hero container">
+        <main class="hero container" data-aos="fade-up" data-aos-delay="400">
           <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.</h1>
           <p>Horário de funcionamento: 09:00 ás 19:00</p>
-          <a href="#" class="button-contact" target="_blank">
+          <a
+            href="https://api.whatsapp.com/send?phone=5531984655356&text=Ol%C3%A1,%20Gostaria%20de%20fazer%20um%20agendamento!"
+            class="button-contact"
+            target="_blank"
+          >
             Agendar horário
           </a>
         </main>
@@ -58,11 +74,13 @@
 
     <section class="about">
       <div class="container about-content">
-        <div>
+        <div data-aos="zoom-in" data-aos-delay="100">
           <img src="assets/images.svg" alt="Imagem sobre a barbearia" />
         </div>
 
-        <div class="about-description">
+        <div class="about-description"
+              data-aos="zoom-out-left" data-aos-delay="250"
+        >
           <h2>Sobre</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque
@@ -76,5 +94,92 @@
         </div>
       </div>
     </section>
+
+    <section class="services">
+      <div class="services-content container">
+        <h2>Serviços</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin
+          risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non
+          duis augue eros mattis a quis sem sodales.
+        </p>
+      </div>
+
+      <section class="haircuts">
+        <div class="haircut" data-aos="fade-up" data-aos-delay="150">
+          <img src="assets/corte1.png" alt="corte normal" />
+
+          <div class="haircut-info">
+            <strong>Corte Normal</strong>
+            <button>R$ 20,00</button>
+          </div>
+        </div>
+
+        <div class="haircut" data-aos="fade-up" data-aos-delay="250">
+          <img src="assets/corte2.png" alt="barba completa" />
+
+          <div class="haircut-info">
+            <strong>Barba Completa</strong>
+            <button>R$ 30,00</button>
+          </div>
+        </div>
+
+        <div class="haircut" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/corte3.png" alt="cabelo e barba" />
+
+          <div class="haircut-info">
+            <strong>Cabelo e Barba</strong>
+            <button>R$ 40,00</button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <div class="services">
+      <h2>Venha conhecer</h2>
+    </div>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.0550019190396!2d-42.875789588424546!3d-20.748564664241318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa3678d7b7d0f73%3A0x27738721fd66ec2c!2sR.%20Mariquinha%20Maciel%2C%20256%20-%20Vicosa%2C%20Vi%C3%A7osa%20-%20MG%2C%2036570-000!5e0!3m2!1spt-PT!2sbr!4v1691161433025!5m2!1spt-PT!2sbr"
+      width="100%"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <footer class="footer">
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/leandro_ricke/" target="_blank">
+          <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=100014023626215" target="_blank">
+          <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
+
+        <a href="https://www.instagram.com/leandro_ricke/" target="_blank">
+          <i class="fa-brands fa-tiktok fa-2x"></i>
+        </a>
+      </div>
+
+      <div>
+        <img src="assets/logo.svg" alt="Logo barbearia" />
+      </div>
+
+      <p>Copyright© 2023 | Dev Barbearia - Todos os direitos reservados.</p>
+    </footer>
+
+    <a
+      href="https://api.whatsapp.com/send?phone=5531984655356&text=Ol%C3%A1,%20Gostaria%20de%20fazer%20um%20agendamento!"
+      class="btn-whatsapp"
+      target="_blank"
+      data-aos="zoom-in-up" data-aos-delay="400"
+    >
+      <img src="assets/whatssapp.svg" alt="Botao whatssapp" />
+      <span class="tooltip-text">Agende seu horário</span>
+    </a>
+    <script src="script.js"></script>
   </body>
 </html>
